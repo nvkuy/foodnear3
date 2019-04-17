@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FoodNear</string>
+    <string name="qr_scan">qr_scan</string>
+    <string name="error_mes">Chưa quét được địa điểm nào. Chạm vào biểu tượng máy ảnh ở góc trên bên phải màn hình để quét mã mới</string>
+</resources>
