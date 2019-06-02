@@ -2,16 +2,29 @@ package com.example.foodnear3;
 
 public class Place {
 
+    private int place_code;
     private int code;
     private String name;
     private String image_link;
     private String address;
 
-    public Place(int code, String name, String image_link, String address) {
+    public Place() {
+    }
+
+    public Place(int place_code, int code, String name, String image_link, String address) {
+        this.place_code = place_code;
         this.code = code;
         this.name = name;
         this.image_link = image_link;
         this.address = address;
+    }
+
+    public int getPlace_code() {
+        return place_code;
+    }
+
+    public void setPlace_code(int place_code) {
+        this.place_code = place_code;
     }
 
     public int getCode() {

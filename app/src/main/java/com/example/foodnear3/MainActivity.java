@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
     String street_name;
     ArrayList<Place> places;
-    final String sv = "http://192.168.43.153";
+    final String sv = "http://27.2.253.214";
 //    final String sv = "http://27.2.255.76";
     final String port = ":5000";
     PlaceAdapter placeAdapter;
@@ -151,15 +151,17 @@ public class MainActivity extends AppCompatActivity {
                     String[] data = response.split("//");
                     for (String item : data) {
                         String[] t = item.split(",");
-                        String cs = t[0];
+                        String cps = t[0];
+                        cps = cps.substring(1);
+                        String cs = t[1];
                         cs = cs.substring(1);
-                        String ns = t[1];
+                        String ns = t[2];
                         ns = ns.substring(2, ns.length() - 1);
-                        String ils = t[2];
+                        String ils = t[3];
                         ils = ils.substring(2, ils.length() - 1);
-                        String as = t[3];
+                        String as = t[4];
                         as = as.substring(2, as.length() - 2);
-                        places.add(new Place(Integer.parseInt(cs), ns, sv + "/server/images/" + ils, as));
+                        places.add(new Place(Integer.parseInt(cps), Integer.parseInt(cs), ns, sv + "/server/images/" + ils, as));
                     }
                     places.get(places.size() - 1).setAddress(places.get(places.size() - 1).getAddress().substring(0, places.get(places.size() - 1).getAddress().length() - 1));
                     UpdateLV();
