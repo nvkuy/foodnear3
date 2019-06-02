@@ -1692,9 +1692,16 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string default_web_client_id
 string error_mes
 string fcm_fallback_notification_channel_label
+string firebase_database_url
+string gcm_defaultSenderId
 string gcm_fallback_notification_channel_label
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string mr_button_content_description
 string mr_cast_button_connected
 string mr_cast_button_connecting
@@ -1718,6 +1725,7 @@ string mr_system_route_name
 string mr_user_route_category_name
 string place_autocomplete_clear_button
 string place_autocomplete_search_hint
+string project_id
 string qr_scan
 string s1
 string s2

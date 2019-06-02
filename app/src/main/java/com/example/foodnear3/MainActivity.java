@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
 
     String street_name;
     ArrayList<Place> places;
-    final String sv = "http://27.2.255.76";
+    final String sv = "http://192.168.43.153";
+//    final String sv = "http://27.2.255.76";
     final String port = ":5000";
     PlaceAdapter placeAdapter;
 

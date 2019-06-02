@@ -1,4 +1,4 @@
-#Wed Apr 17 11:57:42 ICT 2019
+#Sun Jun 02 09:08:02 ICT 2019
 base.0=C\:\\Users\\Admin\\AndroidStudioProjects\\foodnear3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
 path.1=classes2.dex
 renamed.1=classes2.dex
